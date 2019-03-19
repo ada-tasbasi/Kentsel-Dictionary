@@ -3,7 +3,7 @@ $(".like-btn").on("click", (event)=>{
 	let postId = $this.attr("id");
     $.ajax({
         type:"POST",
-        url:`https://kentsel-dictionary-stoyi.c9users.io/entries/${postId}/like/?_method=PUT`,
+        url:`/entries/${postId}/like/?_method=PUT`,
         data:{action:"like"},
         success: (data)=>{
             getLikesAndUpdate(postId, data, true);
@@ -18,7 +18,7 @@ $(".dislike-btn").on("click", (event)=>{
 	let postId = $this.attr("id");
     $.ajax({
         type:"POST",
-        url:`https://kentsel-dictionary-stoyi.c9users.io/entries/${postId}/like/?_method=PUT`,
+        url:`/entries/${postId}/like/?_method=PUT`,
         data:{action:"dislike"},
         success: (data)=>{
             getLikesAndUpdate(postId, data, false);
