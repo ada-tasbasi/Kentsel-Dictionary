@@ -1,0 +1,21 @@
+<% include ./partials/header %>
+<%user.entries.forEach((entry)=>{%>
+<h3 class="entry title"> <a href="/entries/<%= entry.title %>"><%= entry.title %></a></h3>
+<p class="entry content"><%= entry.content %></p>
+<button class="like-btn" id="<%= entry._id %>"><i class="far fa-thumbs-up"><%= entry.likes %></i></button>
+<button class="dislike-btn" id="<%= entry._id %>"><i class="far fa-thumbs-down"></i></button>
+<p class="profile created"><%= (entry.created.toString()).substring(4,21) %></p>
+<%if(currentUser && entry.author.id.equals(currentUser._id)){%>
+    <div class="entry-group">
+    <button><a class="entry-btn" href="/entries/<%= entry._id %>/edit" >Edit</a></button>
+    <form action="/entries/<%= entry._id %>/?_method=DELETE" method="POST">
+        <input class="entry-btn" type="submit" value="Delete"/>
+    </form>
+    </div>
+    <%} %>
+    <hr>
+<%})%>
+ </div>
+  </body>
+  <script type:"text/javascript" src="../../javascripts/jscript.js"></script>
+</html>

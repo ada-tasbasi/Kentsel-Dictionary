@@ -1,0 +1,12 @@
+<% include ./partials/header %>
+
+<div class="form">
+    <h2>Register</h2>
+    <form action="/user/register" method="POST">
+        <input type="text" name="username" placeholder="Username" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button type="submit"><i class="far fa-file-alt"></i>Register</button>
+    </form>
+    <p>Already have an account? Login <a href="/user/login">Here</a></p>
+</div>
+<% include ./partials/footer %>

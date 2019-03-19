@@ -1,0 +1,328 @@
+/* Set the font and html whitespace for navbar */ 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Merriweather', serif;
+  background-color:#FFE6D7;
+}
+
+.container{
+	margin:auto;
+	width:50%;
+}
+/* sanitize anchors */
+a{
+	text-decoration:none;
+	color:inherit;
+}
+
+/* the navbar and its icons  */
+nav{
+	display:flex;
+	padding:20px;
+	background-color: #4682B4;
+	margin-bottom: 10%;
+	max-height:10%;
+}
+
+
+.navbar.brand{
+	color:#FFE4B5;
+	font-size:1.2em; 
+}
+
+.navbar.item{
+	padding-left:1rem;
+	color:#FFE4B5;
+}
+
+.nav.right{
+	display:flex;
+	margin-left:auto;
+}
+
+.navbar.item a:hover{
+	color:white;
+}
+
+nav .fas{
+	padding-right:4px;
+	font-size:15px;
+}
+
+nav .far{
+	padding-right:5px;
+}
+
+.search-form{
+	display:flex;
+	width:100%;
+}
+
+.search-input{
+	border:solid #BC8F8F 3px;
+	margin-right:7px;
+}
+
+.search-btn{
+	background-color:#FFE5C6;
+	padding:2px;
+	font-family:"Merriweather";
+	font-size:small;
+	border-radius:7px;
+	border:solid #BC8F8F;
+}
+
+.search-btn i{
+	color:#BC8F8F;
+}
+
+/* entries */
+.entry.dedicated{
+	display:flex;
+	margin-bottom:80px;
+	justify-content:center;
+	text-decoration:underline;
+}
+
+
+/* entries */
+.entry.dedicated{
+	display:flex;
+	margin-bottom:80px;
+	justify-content:center;
+	text-decoration:underline;
+}
+
+.entry.title a:hover{
+    color:#4682B4;
+}
+
+.entry.author{
+	font-size:small;
+	margin:0;
+}
+
+.entry.author a{
+	color:#4682B4;
+}
+
+.entry.created{
+    font-size:small;
+    margin:0;
+    text-decoration:overline;
+}
+
+.profile.created{
+    font-size: small;
+}
+
+/* style the large new entry button in the entries page */
+.big-btn{
+    display:flex;
+	padding:10px;
+	color:white;
+	font-size:large;
+	border-radius:10px;
+	text-shadow: 1px 2px 1px #999;
+	background-color:#68A4D6;
+	align-items:center;
+	margin:auto;
+	border:double #BC8F8F 5px;
+	box-shadow:4px 4px #1215;
+}
+
+.big-btn .far{
+	font-size:30px;
+	margin-right:10px;
+	color:white;
+}
+
+.big-btn:hover{
+	border:solid #BC8F8F 7px;
+;
+}
+/* the input areas for a new entry */
+.form-all{
+	display: none;
+}
+.input{
+	display:flex;
+	margin:auto;
+	margin-top:3%;
+	border:solid #68A4D6 3px;
+	box-shadow:4px 4px #1215;
+}
+
+input:focus, textarea:focus{
+	background-color:#ccc;
+}
+
+.input.content{
+	font-size: medium;
+}
+
+.input.title{
+	width:50%;
+	height:2rem;
+}
+
+.input textarea{
+	width:100%;
+}
+
+.submit-btn{
+	margin-left:36%;
+	margin-top:2%;
+	background-color:#68A4D6;
+	padding:10px;
+	color:#fff;
+	border:solid #BC8F8F 2px;
+	font-size:medium;
+}
+
+/* user's edit and delete buttons */
+.entry-group{
+	display:flex;
+	width:15%;
+	justify-content:space-between;
+}
+
+.entry-group button{
+	background-color:#68A4D6;
+	border:solid #BC8F8F 1px;
+}
+
+.entry-group input{
+	border:solid #BC8F8F 1px;
+}
+.entry-btn{
+	text-decoration:none;
+	background-color:#68A4D6;
+	font-weight:800;
+	color:white;
+}
+
+/* login and register forms */
+.form {
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:center;
+	border:solid black;
+	background-color:#68A4D6;
+	color:#FFE4B5;
+}
+
+.form p{
+	text-decoration:underline;
+}
+
+.form a{
+	color:#a10a0a;
+}
+
+.form a:hover{
+	color:#e31616;
+}
+
+.form input{
+	display:flex;
+	width:300px;
+	padding:10px;
+	margin:10px;
+	border:solid 2px #BC8F8F;
+}
+
+.form button{
+	display:flex;
+	color:#fff;
+	text-shadow:0 0 4px #0d0220;
+	border-radius:10px;
+	background-color:#BC8F8F;
+	font-size:large;
+	padding:10px;
+	margin-left:35%;
+	
+}
+
+.form i{
+	margin-right:7px;
+}
+
+/* Like and Dislike buttons */
+.like-btn{
+	background-color:#3f5b;
+	width:5%;
+	height:25px;
+}
+
+.like-btn i{
+	display:flex;
+	justify-content:space-between;
+}
+
+.dislike-btn{
+	background-color:#f6000091;
+	width:5%;
+	height:25px;
+}
+
+.dislike-btn i{
+ 	display:flex;
+ 	justify-content:center;
+ }
+
+/* Error Page */
+ .error.link{
+	border:solid #BC8F8F 2px;
+	padding:4px;
+	background-color:#68A4D6;
+	color:white;
+}
+
+.error.status{
+ 	margin-bottom:10%;
+ 	color:red;
+ }
+
+/* Pagination navigation */
+.page.box{
+ 	display:flex;
+ 	border:solid 2px #68A4D6;
+ }
+
+ .page.item{
+ 	border: solid 1px;
+ 	margin:1.5%;
+ 	padding-right:5px;
+ 	padding-left:5px;
+ 	background-color:white;
+ }
+
+/* Size Responsivity */
+@media only screen and (max-width: 1000px){
+	.form input{
+		width:100px;
+	}
+	.form button{
+		width:80px;
+		margin-left:25%;
+	}
+	.form p{
+		font-size:small;
+	}
+	.like-btn ,.dislike-btn {
+		width:30px;
+		margin-right:10%;
+	}	
+	.like-btn i,.dislike-btn i{
+		font-size:10px;
+	}
+	span{
+		display: none;
+	}
+}	

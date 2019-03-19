@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kentsel Sozluk</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="icon" href="https://cdn0.iconfinder.com/data/icons/good-view/500/View-08-512.png">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link rel="stylesheet" 
+	href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
+	crossorigin="anonymous">
+	<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+</head>
+<body>
+    <nav>
+		<div class="navbar brand">
+			<a href="/entries"><i class="far fa-building"></i><span>Kentsel Sozluk</span></a>
+		</div>
+		<div class="navbar item">
+			<form action="/entries/search" class="search-form">
+				<input class="search-input" type="text" name="title"/>
+				<button class="search-btn"><i class="fas fa-search"></i>Search</button>
+			</form>
+		</div>
+		<div class="nav right">
+		  <%if(!currentUser){%>
+		  <div class="navbar item">
+			  <a href="/user/login"><i class="fas fa-user"></i>Login</a>
+		  </div>
+		  <div class="navbar item">
+			  <a href="/user/register"><i class="fas fa-users"></i>Register</a>
+		  </div>
+		  <% }else{ %>
+		  <div class="navbar item">
+			  <a href="/user/<%= currentUser._id %>/profile"><%= currentUser.username %></a>
+		  </div>
+		  <div class="navbar item">
+			  <a href="/user/logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
+		  </div>
+		</div>
+		<% } %>
+	</nav>
+	<div class="container">
+
