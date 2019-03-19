@@ -34,10 +34,12 @@
     <%} %>
     <hr>
     <%}) %>
+    <% if(pageNum > 1){ %>
     <div class="page box"> 
       <% for(let  i= 2;i <= pageNum; i++){%>
         <p class="page item"><a href="/entries/page/<%= i %>"><%= i %></a></p>
       <% } %>
     </div>
+    <% } %>
    
 <% include ../partials/footer %>
