@@ -45,6 +45,7 @@ function wasLikedByUser(req,res,next){
                         
                     }
             });
+    }        
 }
 
 
