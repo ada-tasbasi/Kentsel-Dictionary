@@ -20,6 +20,7 @@ a{
 
 /* the navbar and its icons  */
 nav{
+	display: -moz-box;
 	display: -webkit-box;
 	display:flex;
 	padding:20px;
@@ -40,6 +41,7 @@ nav{
 }
 
 .nav.right{
+	display: -moz-box;
 	display: -webkit-box;
 	display:flex;
 	margin-left:auto;
@@ -59,6 +61,7 @@ nav .far{
 }
 
 .search-form{
+	display: -moz-box;
 	display: -webkit-box;
 	display:flex;
 	width:100%;
@@ -84,6 +87,7 @@ nav .far{
 
 /* entries */
 .entry.dedicated{
+	display: -moz-box;
 	display: -webkit-box;
 	display:flex;
 	margin-bottom:80px;
@@ -94,6 +98,7 @@ nav .far{
 
 /* entries */
 .entry.dedicated{
+	display: -moz-box;
 	display: -webkit-box;
 	display:flex;
 	margin-bottom:80px;
@@ -126,6 +131,7 @@ nav .far{
 
 /* style the large new entry button in the entries page */
 .big-btn{
+	display: -moz-box;
 	display: -webkit-box;
     display:flex;
 	padding:10px;
@@ -155,6 +161,7 @@ nav .far{
 	display: none;
 }
 .input{
+	display: -moz-box;
 	display: -webkit-box;
 	display:flex;
 	margin:auto;
@@ -192,6 +199,7 @@ input:focus, textarea:focus{
 
 /* user's edit and delete buttons */
 .entry-group{
+	display: -moz-box;
 	display: -webkit-box;
 	display:flex;
 	width:15%;
@@ -215,6 +223,7 @@ input:focus, textarea:focus{
 
 /* login and register forms */
 .form {
+	display: -moz-box;
 	display: -webkit-box;
 	display:flex;
 	flex-direction:column;
@@ -239,6 +248,7 @@ input:focus, textarea:focus{
 }
 
 .form input{
+	display: -moz-box;
 	display: -webkit-box;
 	display:flex;
 	width:300px;
@@ -248,6 +258,7 @@ input:focus, textarea:focus{
 }
 
 .form button{
+	display: -moz-box;
 	display: -webkit-box;
 	display:flex;
 	color:#fff;
@@ -272,6 +283,7 @@ input:focus, textarea:focus{
 }
 
 .like-btn i{
+	display: -moz-box;
 	display: -webkit-box;
 	display:flex;
 	justify-content:space-between;
@@ -284,6 +296,7 @@ input:focus, textarea:focus{
 }
 
 .dislike-btn i{
+	display: -moz-box;
 	display: -webkit-box;
  	display:flex;
  	justify-content:center;
@@ -304,6 +317,7 @@ input:focus, textarea:focus{
 
 /* Pagination navigation */
 .page.box{
+	display: -moz-box;
 	display: -webkit-box;
  	display:flex;
  	border:solid 2px #68A4D6;
