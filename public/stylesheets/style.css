@@ -20,6 +20,7 @@ a{
 
 /* the navbar and its icons  */
 nav{
+	display: -webkit-box;
 	display:flex;
 	padding:20px;
 	background-color: #4682B4;
@@ -39,6 +40,7 @@ nav{
 }
 
 .nav.right{
+	display: -webkit-box;
 	display:flex;
 	margin-left:auto;
 }
@@ -57,6 +59,7 @@ nav .far{
 }
 
 .search-form{
+	display: -webkit-box;
 	display:flex;
 	width:100%;
 }
@@ -81,6 +84,7 @@ nav .far{
 
 /* entries */
 .entry.dedicated{
+	display: -webkit-box;
 	display:flex;
 	margin-bottom:80px;
 	justify-content:center;
@@ -90,6 +94,7 @@ nav .far{
 
 /* entries */
 .entry.dedicated{
+	display: -webkit-box;
 	display:flex;
 	margin-bottom:80px;
 	justify-content:center;
@@ -121,6 +126,7 @@ nav .far{
 
 /* style the large new entry button in the entries page */
 .big-btn{
+	display: -webkit-box;
     display:flex;
 	padding:10px;
 	color:white;
@@ -149,6 +155,7 @@ nav .far{
 	display: none;
 }
 .input{
+	display: -webkit-box;
 	display:flex;
 	margin:auto;
 	margin-top:3%;
@@ -185,6 +192,7 @@ input:focus, textarea:focus{
 
 /* user's edit and delete buttons */
 .entry-group{
+	display: -webkit-box;
 	display:flex;
 	width:15%;
 	justify-content:space-between;
@@ -207,6 +215,7 @@ input:focus, textarea:focus{
 
 /* login and register forms */
 .form {
+	display: -webkit-box;
 	display:flex;
 	flex-direction:column;
 	flex-wrap:wrap;
@@ -230,6 +239,7 @@ input:focus, textarea:focus{
 }
 
 .form input{
+	display: -webkit-box;
 	display:flex;
 	width:300px;
 	padding:10px;
@@ -238,6 +248,7 @@ input:focus, textarea:focus{
 }
 
 .form button{
+	display: -webkit-box;
 	display:flex;
 	color:#fff;
 	text-shadow:0 0 4px #0d0220;
@@ -261,6 +272,7 @@ input:focus, textarea:focus{
 }
 
 .like-btn i{
+	display: -webkit-box;
 	display:flex;
 	justify-content:space-between;
 }
@@ -272,6 +284,7 @@ input:focus, textarea:focus{
 }
 
 .dislike-btn i{
+	display: -webkit-box;
  	display:flex;
  	justify-content:center;
  }
@@ -291,6 +304,7 @@ input:focus, textarea:focus{
 
 /* Pagination navigation */
 .page.box{
+	display: -webkit-box;
  	display:flex;
  	border:solid 2px #68A4D6;
  }
