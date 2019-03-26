@@ -71,28 +71,13 @@ router.get("/page/:number", (req,res)=>{
 });
 
 router.get("/:title", (req,res, next)=>{
+    console.log("there");
     let title = req.query.title?req.query.title:req.params.title;
-    Entries.find({title:title}, (err, entry)=>{
+    Entries.find({title:{ $regex : new RegExp(title, "i") }}, (err, entry)=>{
         if(err || entry.length==0){
            return next(createError(404, "The entry you were looking for doesn't exist!"));
         }else{
             res.render("entries/entry", {entry:entry});
-        }
-    });
-});
-
-
-router.get("/search", (req,res, next)=>{
-    let search = req.body.title;
-    Entries.countDocuments({title:search}, (err,count)=>{
-        if(err){
-           return next(createError(404, "The entry you were searching for doesn't exist!"));
-        }else{
-            if(count>0){
-                res.redirect(`/entries/${search}`);            
-            }else{
-                res.send("No entries found for your search!");
-            }
         }
     });
 });

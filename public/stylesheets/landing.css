@@ -4,6 +4,7 @@ body {
   color:aliceblue;
   background: url(https://images.unsplash.com/photo-1502160348486-995f41fa55b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a{
@@ -45,3 +46,10 @@ a {
     background: -webkit-linear-gradient(to left, #BC8F8F, #68A4D6); 
     background: linear-gradient(to left, #BC8F8F, #68A4D6); 
 }
+
+@media only screen and (max-width: 1000px){
+	body{
+		background-position:center;
+		background-size:auto
+	}
+}	
