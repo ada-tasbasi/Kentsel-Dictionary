@@ -15,8 +15,7 @@ const createError = require('http-errors'),
 
 const app = express();
 
-//mongoose.connect('mongodb://localhost:27017/kentsel', { useNewUrlParser: true });
-mongoose.connect('mongodb+srv://yanki:acceptance5@clusterme-zfwj4.mongodb.net/KenstselSozluk?retryWrites=true', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://'/*mongocredentials*/'@clusterme-zfwj4.mongodb.net/KenstselSozluk?retryWrites=true', { useNewUrlParser: true });
 mongoose.set('useFindAndModify', false);
 
 app.use(bodyParser.urlencoded({extended:true}));
